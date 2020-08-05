@@ -3,9 +3,6 @@ const hr = document.querySelector(".hr"),
     min = document.querySelector(".min"),
     sec = document.querySelector(".sec");
 change_color = document.querySelector("#change_color");
-min2 = window.getComputedStyle(
-    document.querySelector('.min'), ':before'
-).getPropertyValue('background-color');
 
 setInterval(() => {
     // degree
@@ -29,7 +26,6 @@ change_color.addEventListener('click', () => {
     if (change_color.value == "Light Mood") {
         change_color.value = "Dark Mood";
         document.body.style.backgroundColor = "#fff";
-        min2.style.backgroundColor = "black";
     } else {
         change_color.value = "Light Mood";
         document.body.style.backgroundColor = "#2f3542";
