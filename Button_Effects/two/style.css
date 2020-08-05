@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.btn {
+    position: relative;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "montserrat";
+    cursor: pointer;
+    background: none;
+    border: 0.2rem solid #3498db;
+    transition: 3s;
+}
+
+.btn::before,
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 1.4rem;
+    height: .2rem;
+    background-color: red;
+    transform: skew(50deg);
+    transition: 3s;
+}
+
+.btn::before {
+    top: -.2rem;
+    right: 12rem;
+}
+
+.btn::after {
+    bottom: -.2rem;
+    left: 12rem;
+}
+
+.btn:hover::before {
+    right: -.1rem;
+}
+
+.btn:hover::after {
+    left: -.1rem;
+}
