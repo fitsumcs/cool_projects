@@ -15,7 +15,7 @@
     font-family: "montserrat";
     cursor: pointer;
     background: none;
-    border: 0.2rem solid #3498db;
+    border: 0.2rem solid #c0392b;
     transition: 3s;
 }
 
@@ -23,21 +23,21 @@
 .btn::after {
     content: "";
     position: absolute;
-    width: 1.4rem;
+    width: 2.4rem;
     height: .2rem;
-    background-color: red;
+    background-color: #f39c12;
     transform: skew(50deg);
     transition: 3s;
 }
 
 .btn::before {
     top: -.2rem;
-    right: 12rem;
+    right: 11rem;
 }
 
 .btn::after {
     bottom: -.2rem;
-    left: 12rem;
+    left: 11rem;
 }
 
 .btn:hover::before {
