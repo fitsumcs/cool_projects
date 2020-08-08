@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('./img/deep.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 2;
+}
+
+.content p {
+    font-size: 1.3rem;
+    font-weight: 700s;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 0.7rem;
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 0.7rem;
+}
+
+.content button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f0707;
+    text-transform: capitalize;
+    padding: 0.2rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.bubblimgs {
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bubblimgs img {
+    width: 2rem;
+    animation: bubble 4s infinite linear;
+}
+
+.bubblimgs img:nth-child(1) {
+    animation-delay: 2s;
+    width: 2.5rem;
+}
+
+.bubblimgs img:nth-child(2) {
+    animation-delay: 1s;
+    width: 1.5rem;
+}
+
+.bubblimgs img:nth-child(3) {
+    animation-delay: .5s;
+    width: 2.7rem;
+}
+
+.bubblimgs img:nth-child(4) {
+    animation-delay: 2s;
+    width: 1.7rem;
+}
+
+.bubblimgs img:nth-child(5) {
+    animation-delay: 2.3s;
+    width: 1.9rem;
+}
+
+.bubblimgs img:nth-child(6) {
+    animation-delay: 1.5s;
+    width: 2.8rem;
+}
+
+.bubblimgs img:nth-child(7) {
+    animation-delay: 3s;
+    width: 3rem;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 1;
+    }
+}
